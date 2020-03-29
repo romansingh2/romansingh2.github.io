@@ -1,48 +1,263 @@
 
-
 <!DOCTYPE html>
 
-<link rel="stylesheet" type="text/css" href="IronManCss.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="survey.css" media="screen"/>
 
-<main id ="main">
-  <h1 id ="tittle">IRON MAN </h1>
-  <p> Earth's mightiest hero </p>
-  <figure id="img-div">
-    <img
-     id="image"
-    
-         src="https://i.postimg.cc/43qDGcxV/iron-man-2.jpg"
-   alt = "Iron Man being bad ass"
- <figcaption id = "img-caption">
-    Poster image of the MCU hero Iron Man</figcaption>
-  </figure>
 
-<section id="tribute-info">
- 
-  <h3 id="headline"> Here's a timeline of his life in the MCU: </h3>
-  
-  <ul>
-    <li><strong>2008</strong>
-      Was attacked by terrorists in Afhganistan. After sustaining injuries from the attack he builds a mini reactor keep shrapnel from reaching his heart. The reactor also doubles as a power source for his armor. </li>
-    <li><strong> 2010 </strong> 
-      His reactor is slowly killing him, but he soon watches video from his dad on how to fix it. War machine makes his debut.  </li>
-    <li><strong>2012 </strong>
-      Thor's stepbrother Loki invades Earth. In order to stop the threat a nuke is thrown into space by Tony. </li>
-    <li><strong>2013 </strong>
-      Tony has PTSD so he challenges a fake terrorist. After dealing with him, he destorys all his suits.</li><strong>2015 </strong>
-    Tony accidentally creates a malevolent AI. </li>
-  <li><strong>2016</strong>
-    Iron Man and Captain America get into an arguement over civil rights. </li>
-  <li><strong>2018</strong>
-    Tony attempts to stop Thanos from getting all of the infinity stones but fails.</li>
-  <li><strong>2019</strong>
-    Tony invents time travel and saves the universe, but at the cost of his own life. </li>
-  <h3> 
-    If you have time, check out this page for more info. 
-    <a
-       id="tribute-link"
-       href= "https://en.wikipedia.org/wiki/Tony_Stark_(Marvel_Cinematic_Universe)" 
-       target="_blank"
-        >Wikipedia entry</a
+<div class="container">
+  <header class ="header">
+    <h1 id="title" class ="text-center"> Health and Fitness Survey</h1>
+    <p id="description"
+    class="description text-center">
+       Thank you for providing us with your valuable input
+       </p>
+  </header>
+  <form id="survey-form">
+    <div class ="form-group">
+         <label id = "name-label"> 
+           <for= "name">Name</label>
+           <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+      />
+           </div> 
+       <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      
+     <div class= "form-group">
+       <label id="number-label"
+      for="number"
+              >Age<span class ="clue">
+         </span></label
       >
+       <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+        />
+      </div>
+      
+      
+     <div class="form-group">
+       <label id="weight-label"
+        for="weight"
+              >Weight (lbs) <span class = "clue"></span></label>
+       <input
+        type="number"
+        name="weight"
+        id="number"
+        min="0"
+        max="1000"
+        class="form-control"
+        placeholder="Weight"
+              
+      
+     <div class="form-group">
+       <label id="height-label"
+        for="height"
+              >Height(inches)<span class = "clue"></span></label>
+       <input
+        type="number"
+        name="weight"
+        id="number"
+        min="0"
+        max="9000"
+        class="form-control"
+        placeholder="Height"
+             
+      
+      
+              
+      
+      <div class ="form-group">
+     <p> What is your sex? </p>
+     <label>
+       <input
+              name="User-Sex"
+              value="Male"
+              type="radio"
+              class="input-radio"
+              checked
+              />Male</label>
+   
+     <label>
+       <input
+              name="User-Sex"
+              value="Female"
+              type="radio"
+              class="input-radio"
+              checked
+              />Female</label>
+        
+        
+     
+     
     
+      <div class = "form-group">
+        <select id="dropdown"
+         name="goal" class="form-control" required> 
+          <option disabled selected value> What is your current fitness goal?</option>
+          <option 
+  value="Hypertrophy">Hypertrophy</option>
+          <option
+                  value="Strength">Strength</option>
+          
+          <option
+  
+ value="Fat Loss">Fat Loss</option>
+          
+          <option
+  
+                  value="Endurance">Endurance</option>
+          
+          <option
+  
+                  value="Speed">Speed</option>
+          
+          <option
+  
+value="Cardiovascular Health">Cardiovascular Health</option>
+        
+          <option
+ 
+                  value="Flexibility">Flexibility</option>        </select>
+          </div>
+        
+        
+  <div class= "form-group">
+   <p> How often do you workout in a week?</p>
+       <label> 
+         <input 
+             name="User-Workout"
+             value="Never"
+             type="radio"
+             class="input-radio"
+             checked
+                />Never</label>
+       
+       <label>
+         <input
+             name="User-Workout"
+             value="Few"
+             type="radio"
+             class="input-radio"
+             checked
+                />1-2 times</label>
+       
+       <label>
+         <input
+             name="User-Workout"
+             value="Regular"
+             type="radio"
+             class="input-radio"
+             checked
+                /> 3-4 times </label>
+      
+       <label>
+         <input
+             name="User-Workout"
+             value="Often"
+             type="radio"
+             class="input-radio"
+             checked
+                />5-6 times</label>
+        
+       <label>
+         <input
+             name="User-Workout"
+             value="Crazy"
+             type="radio"
+             class ="input-radio"
+             checked
+                /> 7+</label>
+    
+          
+    
+    
+    <div class = "form-group">
+        <select id="dropdown"
+         name="city" class="form-control" required> 
+          <option disabled selected value> Where do you currently reside?</option>
+          <option
+     value ="Ajax">Ajax</option>
+          <option
+         value="Brampton">Brampton</option>  
+          
+          <option
+                  value="Burlington">Burlington</option>
+          
+          <option
+                  value="Markham">Markham</option>
+          
+          <option
+                  value="Mississauga">Mississauga</option>
+          <option
+  
+                  value="Newmarket">Newmarket</option>
+          
+          <option
+  
+                  value="Oakville">Oakville</option>
+          
+          <option
+                  
+                  value="Oshawa">Oshawa</option>
+          
+          <option
+                  
+                  value="Pickering">Pickering</option>
+          
+          <option
+                  
+value="Richmond Hill">Richmond Hill</option>
+          
+          <option
+       
+                  value="Vaughan">Vaughan</option>
+          
+          <option
+                  
+                  value="Whitby">Whitby</option>
+          
+          <option
+                  
+  value="Outside GTA">Outside GTA</option>
+   
+    
+    
+     <div class="form-group">
+      <p>What is your favorite form of exercise?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="What's your favourite form of exercise? "
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+     
+              
